@@ -6,7 +6,7 @@ workflows:
         name: ProExplo
         environment:
             vars:
-                FLUTTER_MODULE_DIR: "C:\\flutter"
+                FLUTTER_MODULE_DIR: "C:\\flutter/bin"
                 HOST_IOS_APP_DIR: "D:\\FLUTTER/proexplo_app/ios"
                 XCODE_PROJECT: "com.proexplo.proapp"
                 XCODE_SCHEME: "com.proexplo.proapp"
