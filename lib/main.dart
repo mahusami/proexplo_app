@@ -655,6 +655,15 @@ class _MyProgramaState extends State<Myprograma> with TickerProviderStateMixin {
   String _FEC3;
   String _TFEC3;
   String _TTFEC3;
+  String _TTFEC4;
+  String _TFEC4;
+  String _FEC4;
+  String _TTFEC5;
+  String _TFEC5;
+  String _FEC5;
+  String _TTFEC6;
+  String _TFEC6;
+  String _FEC6;
   String _TEXTOBUS;
   final TextEditingController buscarController = new TextEditingController();
   _MyProgramaState(this._TITLE,this._TIPO,this._FEC1,this._TFEC1,this._TTFEC1,
@@ -698,6 +707,18 @@ class _MyProgramaState extends State<Myprograma> with TickerProviderStateMixin {
       _TFEC3 = sharedPreferences.getString("tokentfec3").toString();
       _TTFEC3 = sharedPreferences.getString("tokenttfec3").toString();
 
+      _FEC4 = sharedPreferences.getString("tokenfec4").toString();
+      _TFEC4 = sharedPreferences.getString("tokentfec4").toString();
+      _TTFEC4 = sharedPreferences.getString("tokenttfec4").toString();
+
+      _FEC5 = sharedPreferences.getString("tokenfec5").toString();
+      _TFEC5 = sharedPreferences.getString("tokentfec5").toString();
+      _TTFEC5 = sharedPreferences.getString("tokenttfec5").toString();
+
+      _FEC6 = sharedPreferences.getString("tokenfec6").toString();
+      _TFEC6 = sharedPreferences.getString("tokentfec6").toString();
+      _TTFEC6 = sharedPreferences.getString("tokenttfec6").toString();
+
     });
 
   }
@@ -736,10 +757,13 @@ class _MyProgramaState extends State<Myprograma> with TickerProviderStateMixin {
           //-----------------------
           const SizedBox(height: 10.0),
           Row(mainAxisAlignment: MainAxisAlignment.center,children: <Widget>[
-
-            _urlButtonDay(context,_FEC1,_TFEC1,_TTFEC1),_urlButtonDay(context,_FEC2,_TFEC2,_TTFEC2),
-            _urlButtonDay(context,_FEC3,_TFEC3,_TTFEC3)]
-
+            _FEC1!=''?_urlButtonDay(context,_FEC1,_TFEC1,_TTFEC1):Container(),
+            _FEC2!=''?_urlButtonDay(context,_FEC2,_TFEC2,_TTFEC2):Container(),
+            _FEC3!=''?_urlButtonDay(context,_FEC3,_TFEC3,_TTFEC3):Container(),
+            _FEC4!=''?_urlButtonDay(context,_FEC4,_TFEC4,_TTFEC4):Container(),
+            _FEC5!=''?_urlButtonDay(context,_FEC5,_TFEC5,_TTFEC5):Container(),
+            _FEC6!=''?_urlButtonDay(context,_FEC6,_TFEC6,_TTFEC6):Container(),
+          ]
           ),
           //_buildTableCalendar(),
           const SizedBox(height: 5.0),

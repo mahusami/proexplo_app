@@ -125,6 +125,19 @@ class _RegisterPageState extends State<RegisterPage> {
                 sharedPreferences.setString("tokenfec3", jsonResponse['FEC3']);
                 sharedPreferences.setString("tokentfec3", jsonResponse['TFEC3']);
                 sharedPreferences.setString("tokenttfec3", jsonResponse['TTFEC3']);
+
+                sharedPreferences.setString("tokenfec4", jsonResponse['FEC4']);
+                sharedPreferences.setString("tokentfec4", jsonResponse['TFEC4']);
+                sharedPreferences.setString("tokenttfec4", jsonResponse['TTFEC4']);
+
+                sharedPreferences.setString("tokenfec5", jsonResponse['FEC6']);
+                sharedPreferences.setString("tokentfec5", jsonResponse['TFEC6']);
+                sharedPreferences.setString("tokenttfec5", jsonResponse['TTFEC6']);
+
+                sharedPreferences.setString("tokenfec6", jsonResponse['FEC6']);
+                sharedPreferences.setString("tokentfec6", jsonResponse['TFEC6']);
+                sharedPreferences.setString("tokenttfec6", jsonResponse['TTFEC6']);
+
                 sharedPreferences.setString("linkferia", jsonResponse['LINKFERIA']);
 
                 Fluttertoast.showToast(
