@@ -7,7 +7,7 @@ workflows:
         environment:
             vars:
                 FLUTTER_MODULE_DIR: "C:\\flutter"
-                HOST_IOS_APP_DIR: "D:\\FLUTTER\proexplo_app\ios"
+                HOST_IOS_APP_DIR: "D:\\FLUTTER/proexplo_app/ios"
                 XCODE_PROJECT: "com.proexplo.proapp"
                 XCODE_SCHEME: "com.proexplo.proapp"
             xcode: edge
